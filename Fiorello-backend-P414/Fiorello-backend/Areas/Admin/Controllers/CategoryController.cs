@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Fiorello_backend.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "SuperAdmin,Admin")]
+    [Authorize]
     public class CategoryController : Controller
     {
         private readonly AppDbContext _context;
